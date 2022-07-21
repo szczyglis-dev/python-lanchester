@@ -10,6 +10,8 @@ from: https://en.wikipedia.org/wiki/Lanchester%27s_laws
 > Lanchester's laws are mathematical formulae for calculating the relative strengths of military forces. The Lanchester equations are differential equations describing the time dependence of two armies' strengths A and B as a function of time, with the function depending only on A and B.
 In 1915 and 1916, during World War I, M. Osipov and Frederick Lanchester independently devised a series of differential equations to demonstrate the power relationships between opposing forces. Among these are what is known as Lanchester's linear law (for ancient combat) and Lanchester's square law (for modern combat with long-range weapons such as firearms).
 
+**Screenshot from Matplotlib:**
+
 ![lanchester](https://user-images.githubusercontent.com/61396542/180256468-4fec137e-121a-416b-86ce-ed96f4a27ad2.png)
 
 ## Repository contents:
