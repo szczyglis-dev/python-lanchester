@@ -17,7 +17,7 @@ In 1915 and 1916, during World War I, M. Osipov and Frederick Lanchester indepen
 ## Repository contents:
 
 - `lanchester.py` - Python module with functions that solve the Lanchester equations in time
-- `app.py` - sample example application that uses the module
+- `app.py` - example application that uses the module
 - `notebook.ipynb` - Jupyter notebook with an example of how it works in real-time
 
 
