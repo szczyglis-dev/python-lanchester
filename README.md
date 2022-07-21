@@ -3,7 +3,7 @@
 
 # Python Lanchester's laws
 
-**A Python module, a Jupyter notebook and a sample application for predicting the result of a battle using Lanchester differential equations. The module can predict the result with 3 different models: `linear law`, `square law` and `modernized model`. An example included in the repository allows you to predict the result using one of these 3 models and display the result and a plot with the course of the battle over time. The module can be easily used in any Python application.**
+**A Python module, a Jupyter notebook and a sample application for predicting the result of a battle using Lanchester differential equations. The module can predict the result with 3 different models: `linear law`, `square law` and `modernized model`. An example included in the repository allows you to predict the result using one of these 3 models and display the result and a plot with the progress of the battle over time. The module can be easily used in any Python application.**
 
 ## What are Lanchester's laws?
 from: https://en.wikipedia.org/wiki/Lanchester%27s_laws
