@@ -25,7 +25,7 @@ In 1915 and 1916, during World War I, M. Osipov and Frederick Lanchester indepen
 
 The module can predict the result using 3 different models: `linear law`, `square law` and `modernized model`.
 
-**Required libraries**
+**Required packages**
 
 - `numpy`
 - `matplotlib`
