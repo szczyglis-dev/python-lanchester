@@ -108,7 +108,7 @@ def get_params():
     # try again or continue
     c = input(
         "[OK] All parameters are collected.\nDo you want to predict battle result now?\n\n"
-        "Type any key to continue and predict or 'N' to come back and correct input parameters\n"
+        "Type any char to continue or 'N' to come back and correct input parameters\n"
     )
     if c == "N" or c == "n" or c == "no":
         get_input()
@@ -137,7 +137,7 @@ def main():
         )
 
     # display result
-    print("Predicted result of the battle：\n")
+    print("Predicted result of the battle ({})：\n".format(model))
     if R[-1] > B[-1]:
         print("Winner: RED")
     else:
@@ -154,15 +154,15 @@ def main():
     plt.plot(t, B, "b", label="BLUE units")
     plt.xlabel("Time (round)")
     plt.ylabel("Number of units")
-    plt.title("Lanchester model simulation")
+    plt.title("Lanchester's model simulation")
     plt.legend()
     plt.show()
 
     c = input(
-        "\n\n[FINISHED] Do you want to try again?\n\nType 'Y' to try again or any other key to exit\n"
+        "\n\n[FINISHED] Do you want to try again?\n\nType 'Y' to try again or any other char to exit\n"
     )
     if c == "Y" or c == "y" or c == "yes":
-        get_input()
+        main()
 
 
 if __name__ == "__main__":
