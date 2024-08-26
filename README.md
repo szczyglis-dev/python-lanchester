@@ -1,29 +1,29 @@
-
-**Python 3+**, current release: **1.0.0** build 2022-07-21
+Release: **1.0.1** | build: **2024.08.26** | Python: **>=3.7**
 
 # Python Lanchester's laws
 
-**A Python module, a Jupyter notebook and a sample application for predicting the result of a battle using Lanchester differential equations. The module can predict the result with 3 different models: `linear law`, `square law` and `modernized model`. An example included in the repository allows you to predict the result using one of these 3 models and display the result and a plot with the progress of the battle over time. The module can be easily used in any Python application.**
+**A Python module, Jupyter notebook, and sample application for predicting the outcome of battles using Lanchester's differential equations. The module can forecast results using three different models: the `linear law`, the `square law`, and a `modernized model`. An example included in the repository demonstrates how to predict outcomes using any of these three models and display both the result and a plot showing the progress of the battle over time. The module can be easily integrated into any Python application.**
 
 ## What are Lanchester's laws?
+
 from: https://en.wikipedia.org/wiki/Lanchester%27s_laws
 > Lanchester's laws are mathematical formulae for calculating the relative strengths of military forces. The Lanchester equations are differential equations describing the time dependence of two armies' strengths A and B as a function of time, with the function depending only on A and B.
 In 1915 and 1916, during World War I, M. Osipov and Frederick Lanchester independently devised a series of differential equations to demonstrate the power relationships between opposing forces. Among these are what is known as Lanchester's linear law (for ancient combat) and Lanchester's square law (for modern combat with long-range weapons such as firearms).
 
-**Screenshot from included example application:**
+**Screenshot from included example application**
 
 ![lanchester](https://user-images.githubusercontent.com/61396542/180256468-4fec137e-121a-416b-86ce-ed96f4a27ad2.png)
 
-## Repository contents:
+## Repository contents
 
-- `lanchester.py` - Python module with functions that solve the Lanchester equations in time
-- `app.py` - example application that uses the module
-- `notebook.ipynb` - Jupyter notebook with an example of how it works in real-time
+- `lanchester.py` - A Python module containing functions that solve the Lanchester equations over time.
+- `app.py` - An example application demonstrating the use of the module.
+- `notebook.ipynb` - A Jupyter notebook showcasing an example of how the module works in real time.
 
 
-### Example of use:
+### Example of Use
 
-The module can predict the result using 3 different models: `linear law`, `square law` and `modernized model`.
+The module can predict outcomes using three different models: the `linear law`, the `square law`, and a `modernized model`.
 
 **Required packages**
 
@@ -145,13 +145,16 @@ plt.legend()
 plt.show()
 ```
 
-**Result:**
+**Result of the battle**
 
 ![lanchester](https://user-images.githubusercontent.com/61396542/180256468-4fec137e-121a-416b-86ce-ed96f4a27ad2.png)
 
 
 ## Changelog
-**- 1.0.0** - published first release (2022-07-21)
+
+**1.0.0** - Initial release (2022-07-21)
+
+**1.0.1** - Updated documentation (2024-08-26)
 
 --- 
 **Python Lanchester is free to use, but if you like it, you can support my work by buying me a coffee ;)**
