@@ -1,7 +1,7 @@
 # (c) 2022 Marcin "szczyglis" Szczygliński
 # GitHub page: https://github.com/szczyglis-dev/python-lanchester
 # Email: szczyglis@protonmail.com
-# Version: 1.0.0
+# Version: 1.0.1
 # This package is licensed under the MIT License.
 # License text available at https://opensource.org/licenses/MIT
 
@@ -35,8 +35,8 @@ b_a = 0.2  # BLUE units ability to recognize
 r_i = 4  # RED units information warfare ability coefficient
 b_i = 4  # BLUE units information warfare ability coefficient
 
-# model select
 def select_model():
+    """Select model"""
     global model
     n = int(
         input(
@@ -56,36 +56,48 @@ def select_model():
         select_model()
 
 
-# get integer input
-def get_int(msg, current):
+def get_int(msg: str, current: int) -> int:
+    """
+    Get integer input
+
+    :param msg: message to display
+    :param current: current value
+    :return: integer value
+    """
     n = int(input("\nEnter {}: [current: {}]\n".format(msg, current)) or current)
     print("Current value: {}\n".format(n))
     return n
 
 
-# get float input
-def get_float(msg, current):
+def get_float(msg: str, current: float) -> float:
+    """
+    Get float input
+
+    :param msg: message to display
+    :param current: current value
+    :return: float value
+    """
     n = float(input("\nEnter {}: [current: {}]\n".format(msg, current)) or current)
     print("Current value: {}\n".format(n))
     return n
 
 
-# get input params
 def get_params():
+    """Get input parameters"""
     global R0, B0, T, dt, r_l, b_l, r_f, r_s, b_s, b_f, r_a, b_a, r_i, b_i
 
-    # base parameters:
+    # base parameters
     R0 = get_int("number of RED units", R0)
     B0 = get_int("number of BLUE units", B0)
     T = get_int("total number of steps in the simulation", T)
     dt = get_int("time interval", dt)
 
-    # parameters for "linear" and "modernized" models:
+    # parameters for "linear" and "modernized" models
     if model == "linear" or model == "modernized":
         r_l = get_float("combat efficiency of RED units", r_l)
         b_l = get_float("combat efficiency of BLUE units", b_l)
 
-    # parameters for "square" and "modernized"  models:
+    # parameters for "square" and "modernized"  models
     if model == "square" or model == "modernized":
         r_s = get_float(
             "average number of RED units that damage each other per unit of time", r_s
@@ -94,7 +106,7 @@ def get_params():
             "average number of BLUE units that damage each other per unit of time", b_s
         )
 
-    # parameters for "modernized" model only:
+    # parameters for "modernized" model only
     if model == "modernized":
         r_f = get_float("RED units camouflage ability factor", r_f)
         b_f = get_float("BLUE units camouflage ability factor", b_f)
@@ -114,14 +126,14 @@ def get_params():
         get_input()
 
 
-# initialize
 def get_input():
+    """Get input"""
     select_model()
     get_params()
 
 
-# main app
 def main():
+    """Main function"""
     print("Lanchester's laws simulation, v.{}".format(lanchester.__version__))
     print("GitHub page: https://github.com/szczyglis-dev/python-lanchester\n")
 
@@ -162,7 +174,7 @@ def main():
         "\n\n[FINISHED] Do you want to try again?\n\nType 'Y' to try again or any other char to exit\n"
     )
     if c == "Y" or c == "y" or c == "yes":
-        main()
+        main()  # try again
 
 
 if __name__ == "__main__":
